@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.box-red{
+    background-color:orange;
+    height: 50px;
+}
+.box-green{
+    background-color:rgb(247, 247, 247);
+    height: 50px;
+}
+.box-green img{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+.box-orange{
+    background-color:rgb(0, 255, 4);
+    height: 50px;
+}

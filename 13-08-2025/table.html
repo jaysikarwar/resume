@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Menu</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fbe8d3, #f7d1ba);
+            margin: 0;
+            padding: 20px;
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th {
+            padding: 15px;
+            font-size: 1.5rem;
+            text-align: center;
+            background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+            color: #fff;
+        }
+        td {
+            padding: 15px;
+            text-align: center;
+            font-size: 1rem;
+        }
+        .day-cell {
+            background: linear-gradient(180deg, #ffdde1, #ee9ca7);
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+        img {
+            border-radius: 8px;
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            margin-bottom: 8px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.2);
+        }
+        tr:hover td {
+            background-color: #ffe8e8;
+            transition: 0.3s;
+        }
+        .meal-type {
+            font-weight: bold;
+            color: #444;
+        }
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th colspan="3">MY DAILY MENU</th>
+        </tr>
+        <tr>
+            <td rowspan="3" class="day-cell">
+                M<br>O<br>N<br>D<br>A<br>Y
+            </td>
+            <td class="meal-type">Breakfast</td>
+            <td>
+                <img src="https://sukhis.com/app/uploads/2019/09/Indian-Breakfast.jpg" alt="Breakfast">
+                <br>Orange Juice <br>Toast <br>Coffee
+            </td>
+        </tr>
+        <tr>
+            <td class="meal-type">Lunch</td>
+            <td>
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/6/ZP/TZ/IK/144143379/lunch-food-services-500x500.jpg" alt="Lunch">
+                <br>Sandwich <br>Apple
+            </td>
+        </tr>
+        <tr>
+            <td class="meal-type">Dinner</td>
+            <td>
+                <img src="https://www.southernliving.com/thmb/7nHGViEzluBMUf4ML31L1AROhc0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Southern_Living_Slow-Cooker-French-Onion-Soup-35-1-52753713836a4b0d84b4701e27cb4e7e.jpg" alt="Dinner">
+                <br>Hamburger <br>Mashed Potato <br>Green Beans
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
